@@ -1,0 +1,114 @@
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA EVENTOS
+   ========================================= */
+
+/* --- Variables Locales (Sincronizadas con la marca) --- */
+:root {
+    --jora-yellow: #ffc107;
+    --jora-dark: #212529;
+    --jora-brown: #5d4037; /* Marrón rústico para títulos */
+}
+
+/* --- Tipografía --- */
+.font-serif {
+    font-family: 'Merriweather', serif; /* Elegante para el título principal */
+}
+
+.section-title {
+    color: var(--jora-brown);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Hero Section (Ajustes del banner principal) --- */
+.eventos-hero {
+    /* Asegura que el texto se lea bien sobre la imagen */
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.eventos-hero h1 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .eventos-hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* --- Separador Decorativo --- */
+.visit-divider {
+    height: 4px;
+    width: 60px;
+    background-color: var(--jora-yellow);
+    border-radius: 2px;
+    margin: 1rem auto;
+}
+
+/* --- Imágenes y Mosaico --- */
+/* Asegura que las fotos no se deformen */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Efecto suave al pasar el mouse por las imágenes */
+.img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.02); /* Pequeño zoom */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Listas con checkmarks */
+.bi-check-circle-fill {
+    font-size: 1.1rem;
+    vertical-align: text-top;
+}
+
+/* --- Sección CTA (Cotizar) --- */
+/* Efecto Hover en las tarjetas oscuras de contacto */
+.hover-bg-dark-light {
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+.hover-bg-dark-light:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Se aclara un poco al tocar */
+    transform: translateY(-5px); /* Se eleva un poco */
+    border-color: var(--jora-yellow) !important; /* Borde amarillo al seleccionar */
+}
+
+/* Botones personalizados */
+.btn-warning {
+    color: #000;
+    background-color: var(--jora-yellow);
+    border: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-warning:hover {
+    background-color: #ffca2c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+.btn-outline-warning {
+    color: var(--jora-yellow);
+    border-color: var(--jora-yellow);
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--jora-yellow);
+    color: #000;
+}
+
+/* --- Utilidad: Ajuste para el Navbar fijo --- */
+/* Esto evita que el contenido quede oculto detrás del header fijo */
+section {
+    scroll-margin-top: 100px; 
+}

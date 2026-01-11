@@ -1,0 +1,58 @@
+/* =========================================
+   ESTILOS PARA PÁGINA DE SHOWS
+   ========================================= */
+
+/* --- Hero Section --- */
+.shows-hero {
+    /* Sombra extra en el texto para que se lea bien sobre el fondo del caballo */
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Títulos --- */
+.section-title {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-brown {
+    color: #5d4037; /* Color tierra para los títulos de los shows */
+}
+
+/* --- Tarjetas de Horarios --- */
+.bg-dark-lighter {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.bg-dark-lighter:hover {
+    transform: translateY(-5px);
+    border-color: #ffc107 !important; /* Borde amarillo al pasar el mouse */
+}
+
+/* --- Imágenes de los Shows --- */
+.show-card img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.show-card:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+/* --- Badges (Etiquetas de región) --- */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.5em 1em;
+}
+
+/* --- Icono de Cámara --- */
+.bi-camera-fill {
+    animation: flash 2s infinite; /* Efecto sutil para llamar la atención */
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}

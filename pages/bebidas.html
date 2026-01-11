@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carta de Bebidas Jora Restaurant: Cócteles, Piscos, Vinos y Refrescos.">
+    
+    <title>Nuestras Bebidas - Jora Restaurant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/carta.css">
+    <link rel="stylesheet" href="../assets/css/bebidas.css">
+</head>
+<body>
+
+    <header class="site-header fixed-top transition-all" id="mainNav">
+        <div class="container-fluid h-100 px-3 px-xl-4 px-xxl-3">
+            <div class="desktop-view">
+                <div class="header-col-left">
+                    <div class="social-icons">
+                        <a href="https://wa.me/51967715165" target="_blank"><img src="../assets/icons/whatsapp_icon.png" alt="WA"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" target="_blank"><img src="../assets/icons/instagram_icon.png" alt="IG"></a>
+                        <a href="https://web.facebook.com/p/Jora-Restaurante-100068304454260" target="_blank"><img src="../assets/icons/facebook_icon.png" alt="FB"></a>
+                        <a href="https://www.tiktok.com/@jorarestaurante" target="_blank"><img src="../assets/icons/tiktok_icon.png" alt="TK"></a>
+                        <span class="nav-separator"></span>
+                    </div>
+                </div>
+                <div class="header-col-center">
+                    <nav class="nav-links-left">
+                        <a href="../index.html#carta">carta</a>
+                        <a href="../index.html#visitanos">Horarios</a>
+                        <a href="../index.html#nosotros">Nosotros</a>
+                    </nav>
+                    <a class="logo mx-xl-4 mx-3" href="../index.html">
+                        <img src="../assets/icons/JORALOGOMEJOR.webp" alt="Jora Logo" id="mainLogo"> 
+                    </a>
+                    <nav class="nav-links-right">
+                        <a href="bebidas.html" class="active">Bebidas</a>
+                        <a href="eventos.html">Eventos</a>
+                        <a href="shows.html">Shows</a>
+                    </nav>
+                </div>
+                <div class="header-col-right">
+                    <div class="header-ctas">
+                        <span class="nav-separator me-xl-3 me-2"></span>
+                        <a href="../index.html#ubicacion" class="nav-cta nav-cta-reserva me-xl-2 me-1">
+                            <img src="../assets/icons/reserva_blanco.webp" alt="Reserva"><span>Reserva</span>
+                        </a>
+                        <a href="../index.html#ubicacion" class="nav-cta nav-cta-ubicanos">
+                            <img src="../assets/icons/ubicacion_blanco.png" alt="Ubicación"><span>Ubícanos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-view">
+                <a class="logo-mobile" href="../index.html"><img src="../assets/icons/JORALOGOMEJOR.webp" alt="Jora Logo"></a>
+                <button class="menu-toggle" type="button" id="menuToggleBtn">
+                    <div class="hamburger-box"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></div>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu">
+            <div class="mobile-menu-content">
+                <ul class="list-unstyled text-center mobile-nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="carta.html">Carta de Comida</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="bebidas-hero position-relative d-flex align-items-center justify-content-center text-center text-white" 
+             style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/foto3.webp') no-repeat center center/cover; height: 50vh; margin-top: 80px;">
+        <div class="container">
+            <span class="text-warning fw-bold text-uppercase tracking-wide mb-2 d-block">Bar & Coctelería</span>
+            <h1 class="display-2 fw-bold font-serif mb-3">Nuestra Barra</h1>
+            <p class="lead fs-4 fst-italic">Tradición en cada copa</p>
+            <a href="../assets/Documents/CARTA BEBIDAS.jpeg" download="CARTA BEBIDAS.jpeg" class="btn btn-outline-light rounded-pill mt-3 px-4 fw-bold">Descargar Carta</a>
+        </div>
+    </section>
+
+    <nav id="subMenuBebidas" class="sticky-top bg-white border-bottom shadow-sm py-2 d-none d-lg-block" style="z-index: 900; transition: top 0.3s ease;">
+        <div class="container d-flex justify-content-center gap-4">
+            <a href="#sin-alcohol" class="text-decoration-none text-dark fw-bold hover-warning">Sin Alcohol</a>
+            <a href="#alcoholicas" class="text-decoration-none text-dark fw-bold hover-warning">Alcohólicas</a>
+            <a href="#comerciales" class="text-decoration-none text-dark fw-bold hover-warning">Comerciales</a>
+            <a href="#calientes" class="text-decoration-none text-dark fw-bold hover-warning">Calientes</a>
+            <a href="#vinos" class="text-decoration-none text-dark fw-bold hover-warning">Vinos</a>
+        </div>
+    </nav>
+
+    <div class="container container-wide py-5">
+
+        <section id="sin-alcohol" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-5 text-success">Sin Alcohol</h2>
+            
+            <h3 class="fw-bold text-brown mb-4 border-bottom pb-2">Bebidas Frías</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Chicha de Jora"></div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Chicha de Jora</h3>
+                            <p class="dish-desc mt-2"><strong>Jarra:</strong> S/ 25.00 | <strong>Vaso:</strong> S/ 12.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Chicha Morada"></div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Chicha Morada</h3>
+                            <p class="dish-desc mt-2"><strong>Jarra:</strong> S/ 20.00 | <strong>Vaso:</strong> S/ 8.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Limonada Clásica"></div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Limonada Clásica</h3>
+                            <p class="dish-desc mt-2"><strong>Jarra:</strong> S/ 18.00 | <strong>Vaso:</strong> S/ 8.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="fw-bold text-brown mb-4 border-bottom pb-2">Sodas Tropicales</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title fs-5">Maracu-Mango</h3><span class="dish-price fs-5">S/ 14</span></div>
+                            <p class="dish-desc small">Pulpa de mango, maracuyá y ginger ale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title fs-5">Tuntuna</h3><span class="dish-price fs-5">S/ 14</span></div>
+                            <p class="dish-desc small">Tuna roja, limón, syrup y ginger ale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title fs-5">Orange Power</h3><span class="dish-price fs-5">S/ 14</span></div>
+                            <p class="dish-desc small">Jugo de naranja, frutos rojos y ginger ale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title fs-5">Fresa Montesa</h3><span class="dish-price fs-5">S/ 14</span></div>
+                            <p class="dish-desc small">Pulpa de fresa, limón y ginger ale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5 opacity-25">
+
+        <section id="alcoholicas" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-5 text-danger">Alcohólicas</h2>
+            
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-brown mb-3">Creativos</h3>
+                    <ul class="list-group list-group-flush rounded-4 overflow-hidden shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><strong class="d-block">Malco de Jora</strong><small class="text-muted">Ron jamaiquino y cubano, coco y maracuyá.</small></div>
+                            <span class="fw-bold text-danger">S/ 26</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><strong class="d-block">Jora Punch</strong><small class="text-muted">Pisco, masco, arándanos y mix de miel.</small></div>
+                            <span class="fw-bold text-danger">S/ 25</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><strong class="d-block">Holiday</strong><small class="text-muted">Vodka, coco, naranja, piña y menta.</small></div>
+                            <span class="fw-bold text-danger">S/ 28</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-brown mb-3">Clásicos</h3>
+                    <ul class="list-group list-group-flush rounded-4 overflow-hidden shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Mojito</span> <strong>S/ 25</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Piña Colada</span> <strong>S/ 26</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Daiquiri</span> <strong>S/ 24</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Algarrobina</span> <strong>S/ 25</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Gin Tonic</span> <strong>S/ 28</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row g-5 mt-4">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-brown mb-3">Chilcano & Sours</h3>
+                    <ul class="list-group list-group-flush rounded-4 overflow-hidden shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Clásico</span> <strong>S/ 25</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Maracuyá</span> <strong>S/ 25</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Especial</span> <strong>S/ 35</strong></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div><strong class="d-block">Macerados</strong><small class="text-muted">Coca, Canela, Aguaymanto, Frutos rojos.</small></div>
+                            <span class="fw-bold text-danger">S/ 29</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-brown mb-3">Digestivos (Shots)</h3>
+                    <ul class="list-group list-group-flush rounded-4 overflow-hidden shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Anís Najar</span> <strong>S/ 15</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Kahlúa (Licor de café)</span> <strong>S/ 21</strong></li>
+                        <li class="list-group-item d-flex justify-content-between p-3"><span>Cointreau (Licor de naranja)</span> <strong>S/ 26</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5 opacity-25">
+
+        <section id="comerciales" class="mb-5 scroll-offset bg-light p-4 rounded-5 border">
+            <h2 class="menu-category-title text-center mb-4">Comerciales</h2>
+            <div class="row text-center">
+                <div class="col-md-6 mb-4">
+                    <h4 class="text-brown fw-bold">Cervezas</h4>
+                    <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <span class="badge bg-white text-dark border p-2 fs-6">Cusqueña (Dorada/Trigo/Negra) <strong class="text-danger">S/ 10</strong></span>
+                        <span class="badge bg-white text-dark border p-2 fs-6">Stella Artois <strong class="text-danger">S/ 14</strong></span>
+                        <span class="badge bg-white text-dark border p-2 fs-6">Corona <strong class="text-danger">S/ 14</strong></span>
+                        <span class="badge bg-white text-dark border p-2 fs-6">Artesanal <strong class="text-danger">S/ 16</strong></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-brown fw-bold">Gaseosas & Agua</h4>
+                    <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <span class="badge bg-white text-dark border p-2 fs-6">Inca Kola / Coca Cola <strong class="text-danger">S/ 8</strong></span>
+                        <span class="badge bg-white text-dark border p-2 fs-6">Agua San Mateo <strong class="text-danger">S/ 5</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calientes" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-4">Bebidas Calientes</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="p-3 border rounded-3 text-center bg-white shadow-sm h-100">
+                        <h5 class="mb-1">Emoliente</h5>
+                        <p class="text-muted small mb-2">Tradicional / Frutado</p>
+                        <strong class="text-danger fs-5">S/ 12</strong>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded-3 text-center bg-white shadow-sm h-100">
+                        <h5 class="mb-1">Mate (500ml)</h5>
+                        <p class="text-muted small mb-2">Hierba luisa, muña, cedrón</p>
+                        <strong class="text-danger fs-5">S/ 16</strong>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded-3 text-center bg-white shadow-sm h-100">
+                        <h5 class="mb-1">Infusiones</h5>
+                        <p class="text-muted small mb-2">Anís, Manzanilla, Té</p>
+                        <strong class="text-danger fs-5">S/ 7</strong>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 border rounded-3 text-center bg-white shadow-sm h-100">
+                        <h5 class="mb-1">Café Selecto</h5>
+                        <p class="text-muted small mb-2">Pasado al momento</p>
+                        <strong class="text-danger fs-5">S/ 12</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vinos" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-5 text-purple">Vinos</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <h3 class="dish-title text-purple">Intipalka</h3>
+                            <ul class="list-unstyled mt-3">
+                                <li class="d-flex justify-content-between border-bottom py-2"><span>Malco / Syrah</span> <strong>S/ 65</strong></li>
+                                <li class="d-flex justify-content-between border-bottom py-2"><span>Malbec - Merlot</span> <strong>S/ 79</strong></li>
+                                <li class="d-flex justify-content-between py-2"><span>Malbec (375ml)</span> <strong>S/ 38</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <h3 class="dish-title text-purple">Casillero del Diablo</h3>
+                            <ul class="list-unstyled mt-3">
+                                <li class="d-flex justify-content-between border-bottom py-2"><span>Cabernet / Malbec / Carmenere</span> <strong>S/ 75</strong></li>
+                                <li class="d-flex justify-content-between border-bottom py-2"><span>Red Blend</span> <strong>S/ 89</strong></li>
+                                <li class="d-flex justify-content-between py-2"><span>Merlot</span> <strong>S/ 79</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <h3 class="dish-title text-purple">Marqués de Riscal</h3>
+                            <ul class="list-unstyled mt-3">
+                                <li class="d-flex justify-content-between border-bottom py-2"><span>Syrah y Tempranillo</span> <strong>S/ 89</strong></li>
+                                <li class="d-flex justify-content-between py-2"><span>Verdejo</span> <strong>S/ 89</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dish-card">
+                        <div class="dish-content">
+                            <h3 class="dish-title text-purple">Estancia Mendoza</h3>
+                            <ul class="list-unstyled mt-3">
+                                <li class="d-flex justify-content-between border-bottom py-2"><span>Cabernet / Chardonnay</span> <strong>S/ 65</strong></li>
+                                <li class="d-flex justify-content-between py-2"><span>Merlot-Malbec / Cabernet-Malbec</span> <strong>S/ 60</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-light border rounded text-center">
+                <p class="mb-0 fw-bold text-secondary">Descorche: S/ 39.00</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer bg-dark pt-5 pb-3">
+        <div class="container container-wide">
+            <div class="row g-4 justify-content-between">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0 text-center text-md-start">
+                    <a href="../index.html" class="d-block mb-4 footer-logo mx-auto mx-md-0">
+                        <img src="../assets/img/jora_blanco.png" alt="Jora Restaurant Logo" width="180">
+                    </a>
+                    <p class="text-white-50 mb-4">
+                        Jora Restaurante Campestre es un espacio donde la gastronomía peruana se fusiona con la naturaleza.
+                    </p>
+                    <h5 class="text-white mb-3 footer-title-sm">Síguenos</h5>
+                    <div class="footer-social-links d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="https://www.tiktok.com/@jorarestaurante" target="_blank" class="footer-social-btn tiktok"><img src="../assets/icons/tiktok_icon.png" alt="TK"></a>
+                        <a href="https://web.facebook.com/p/Jora-Restaurante-100068304454260" target="_blank" class="footer-social-btn facebook"><img src="../assets/icons/facebook_icon.png" alt="FB"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" target="_blank" class="footer-social-btn instagram"><img src="../assets/icons/instagram_icon.png" alt="IG"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0 text-center text-md-start">
+                    <h4 class="footer-title mb-4">Explora</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="carta.html">Carta de Comida</a></li>
+                        <li><a href="bebidas.html">Bebidas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="shows.html">Shows</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center text-md-start">
+                    <h4 class="footer-title mb-4">Contáctanos</h4>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><a href="https://wa.me/51967715165" target="_blank" class="d-flex align-items-start gap-3 justify-content-center justify-content-md-start"><div class="contact-icon"><img src="../assets/icons/whatsapp_icon.png" alt="Tel"></div><div class="text-start"><span class="d-block text-white fw-bold">WhatsApp General</span><span class="text-white-50">967 715 165</span></div></a></li>
+                        <li><a href="mailto:jorarestaurante1@gmail.com" class="d-flex align-items-start gap-3 justify-content-center justify-content-md-start"><div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div><div class="text-start"><span class="d-block text-white fw-bold">Correo</span><span class="text-white-50 text-truncate" style="max-width: 150px;">jorarestaurante1@gmail.com</span></div></a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Jora+Restaurante+Pachacamac" target="_blank" class="d-flex align-items-start gap-3 justify-content-center justify-content-md-start"><div class="contact-icon"><img src="../assets/icons/ubicacion_blanco.png" alt="Ubi"></div><div class="text-start"><span class="d-block text-white fw-bold">Ubicación</span><span class="text-white-50">Pachacámac, Lima</span></div></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center text-md-start">
+                    <h4 class="footer-title mb-4">Legal</h4>
+                    <ul class="list-unstyled footer-links mb-4">
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                    <div class="libro-reclamaciones-block"><a href="reclamaciones.html" class="d-block mx-auto mx-md-0" style="max-width: 150px;"><img src="../assets/img/librodereclamaciones.webp" alt="Libro" class="img-fluid rounded-3 border border-secondary"></a></div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4 opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start"><p class="text-white-50 small mb-0">© <span id="year">2026</span> <strong>Jora Restaurant</strong>.</p></div>
+                <div class="col-md-6 text-center text-md-end d-none d-md-block"><p class="text-white-50 small mb-0">Diseñado con <span class="text-danger">❤</span></p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    
+    <script>
+        function ajustarSubMenu() {
+            const header = document.getElementById('mainNav');
+            const subMenu = document.getElementById('subMenuBebidas');
+            if (header && subMenu) {
+                subMenu.style.top = header.offsetHeight + 'px';
+            }
+        }
+        window.addEventListener('scroll', ajustarSubMenu);
+        window.addEventListener('resize', ajustarSubMenu);
+        document.addEventListener('DOMContentLoaded', ajustarSubMenu);
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carta de Jora Restaurant: Cocina campestre con alma de autor en Pachacámac.">
+    
+    <title>Nuestra Carta - Jora Restaurant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/carta.css"> 
+</head>
+<body>
+
+    <header class="site-header fixed-top transition-all" id="mainNav">
+        <div class="container-fluid h-100 px-3 px-xl-4 px-xxl-3">
+            <div class="desktop-view">
+                <div class="header-col-left">
+                    <div class="social-icons">
+                        <a href="https://wa.me/51967715165" target="_blank"><img src="../assets/icons/whatsapp_icon.png" alt="WA"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" target="_blank"><img src="../assets/icons/instagram_icon.png" alt="IG"></a>
+                        <a href="https://web.facebook.com/p/Jora-Restaurante-100068304454260" target="_blank"><img src="../assets/icons/facebook_icon.png" alt="FB"></a>
+                        <a href="https://www.tiktok.com/@jorarestaurante" target="_blank"><img src="../assets/icons/tiktok_icon.png" alt="TK"></a>
+                        <span class="nav-separator"></span>
+                    </div>
+                </div>
+                <div class="header-col-center">
+                    <nav class="nav-links-left">
+                        <a href="../index.html#carta" class="active">Carta</a>
+                        <a href="../index.html#visitanos">Horarios</a>
+                        <a href="../index.html#nosotros">Nosotros</a>
+                    </nav>
+                    <a class="logo mx-xl-4 mx-3" href="../index.html">
+                        <img src="../assets/icons/JORALOGOMEJOR.webp" alt="Jora Logo" id="mainLogo"> 
+                    </a>
+                    <nav class="nav-links-right">
+                        <a href="bebidas.html">Bebidas</a>
+                        <a href="eventos.html">Eventos</a>
+                        <a href="shows.html">Shows</a>
+                    </nav>
+                </div>
+                <div class="header-col-right">
+                    <div class="header-ctas">
+                        <span class="nav-separator me-xl-3 me-2"></span>
+                        <a href="../index.html#ubicacion" class="nav-cta nav-cta-reserva me-xl-2 me-1">
+                            <img src="../assets/icons/reserva_blanco.webp" alt="Reserva"><span>Reserva</span>
+                        </a>
+                        <a href="../index.html#ubicacion" class="nav-cta nav-cta-ubicanos">
+                            <img src="../assets/icons/ubicacion_blanco.png" alt="Ubicación"><span>Ubícanos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-view">
+                <a class="logo-mobile" href="../index.html"><img src="../assets/icons/JORALOGOMEJOR.webp" alt="Jora Logo"></a>
+                <button class="menu-toggle" type="button" id="menuToggleBtn">
+                    <div class="hamburger-box"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></div>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu">
+            <div class="mobile-menu-content">
+                <ul class="list-unstyled text-center mobile-nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="platos.html">Carta de Comida</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="carta-hero position-relative d-flex align-items-center justify-content-center text-center text-white" 
+             style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/foto4.webp') no-repeat center center/cover; height: 50vh; margin-top: 80px;">
+        <div class="container">
+            <span class="text-warning fw-bold text-uppercase tracking-wide mb-2 d-block">Cocina Campestre</span>
+            <h1 class="display-2 fw-bold font-serif mb-3">Sabores del Campo</h1>
+            <p class="lead fs-4 fst-italic">Con alma de autor</p>
+            <a href="../assets/Documents/CARTA DICIEMBRE.pdf" download="CARTA_DICIEMBRE.pdf" class="btn btn-outline-light rounded-pill mt-3 px-4 fw-bold">Descargar Carta PDF</a>
+        </div>
+    </section>
+
+    <nav id="subMenuCarta" class="sticky-top bg-white border-bottom shadow-sm py-2 d-none d-lg-block" style="z-index: 900; transition: top 0.3s ease;">
+        <div class="container d-flex justify-content-center gap-4">
+            <a href="#compartir" class="text-decoration-none text-dark fw-bold hover-warning">Para Compartir</a>
+            <a href="#entradas" class="text-decoration-none text-dark fw-bold hover-warning">Entradas</a>
+            <a href="#fondos" class="text-decoration-none text-dark fw-bold hover-warning">Fondos</a>
+            <a href="#parrilla" class="text-decoration-none text-dark fw-bold hover-warning">Parrillas</a>
+            <a href="#postres" class="text-decoration-none text-dark fw-bold hover-warning">Postres</a>
+        </div>
+    </nav>
+
+    <div class="container container-wide py-5">
+
+        <section id="compartir" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-5">Para Compartir</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Empanaditas" class="img-fluid"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2"><h3 class="dish-title">Empanaditas de Chanchito</h3><span class="dish-price">S/ 38</span></div>
+                            <p class="dish-desc">Empanadas fritas, rellenas de tierno chanchito al palo, con queso edam y salsa BBQ. [cite: 7, 8, 9, 103, 104]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Wantanes" class="img-fluid"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2"><h3 class="dish-title">Wantanes Cevicheros</h3><span class="dish-price">S/ 38</span></div>
+                            <p class="dish-desc">Rellenos con pesca del día, acompañados de leche de tigre y toques de canela china. [cite: 10, 11, 12, 105, 106]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Tequeños Brava" class="img-fluid"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2"><h3 class="dish-title">Tequeños a la Brava</h3><span class="dish-price">S/ 39</span></div>
+                            <p class="dish-desc">Rellenos de mariscos en salsa cremosa picante y acompañados de una salsa picante acevichada. [cite: 13, 14, 107, 108]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Tequeños Lomo" class="img-fluid"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2"><h3 class="dish-title">Tequeños de Lomo</h3><span class="dish-price">S/ 39</span></div>
+                            <p class="dish-desc">Bastones crocantes rellenos de lomo fino salteado al wok, acompañados de guacamole. [cite: 15, 16, 109, 110, 111]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Chorizos" class="img-fluid"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2"><h3 class="dish-title">Chorizos al Carbón</h3><span class="dish-price">S/ 39</span></div>
+                            <p class="dish-desc">Hechos a la parrilla, con chimichurri y pan al horno en barro. [cite: 17, 18, 112, 113]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Boliyucas" class="img-fluid"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between align-items-start mb-2"><h3 class="dish-title">Boliyucas</h3><span class="dish-price">S/ 35</span></div>
+                            <p class="dish-desc">Masa artesanal de yuca, rellenas de queso de cabra, coronadas con chalaquita. [cite: 189, 190]</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-5 opacity-25">
+
+        <section id="entradas" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-5">Nuestras Entradas</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="dish-card horizontal">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Causa Bonito"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title">Causa de Bonito Crocante</h3><span class="dish-price">S/ 43</span></div>
+                            <p class="dish-desc">Tataki de bonito, masa rellena de queso crema, huevo de codorniz y tomate cherry. [cite: 22, 23, 115, 116, 205, 206]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="dish-card horizontal">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Causa Trucha"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title">Causa con Tartar de Trucha</h3><span class="dish-price">S/ 43</span></div>
+                            <p class="dish-desc">Trucha con palta, cebolla blanca y ajonjolí, con esferas crocantes de causa. [cite: 24, 25, 117, 118]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="dish-card horizontal">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Ensalada Parrillera"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title">Ensalada Parrillera</h3><span class="dish-price">S/ 39</span></div>
+                            <p class="dish-desc">Pollito al grill, mix de lechugas, vegetales a la parrilla, champiñones y aguaymanto. [cite: 26, 27, 119, 120]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="dish-card horizontal">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Ensalada Casa"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title">Ensalada de la Casa</h3><span class="dish-price">S/ 39</span></div>
+                            <p class="dish-desc">Dedos de pollo, mix de lechuga, naranja, pecanas, arándanos y frutos secos. [cite: 28, 29, 30, 121, 122, 199, 200, 201]</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-6">
+                    <div class="dish-card horizontal">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Brochetas"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title">Brochetas Marinas</h3><span class="dish-price">S/ 49</span></div>
+                            <p class="dish-desc">Pez espada y langostinos en salsa anticuchera, con papas coctel. [cite: 31, 32, 123, 124]</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-5 opacity-25">
+
+        <section id="fondos" class="mb-5 scroll-offset">
+            <h2 class="menu-category-title text-center mb-5">Especialidades de la Casa</h2>
+            <div class="row g-4">
+                
+                <div class="col-lg-6">
+                    <div class="dish-card highlight">
+                        <div class="dish-img-container" style="height: 300px;"><img src="../assets/img/noimage.avif" alt="Arroz con Pato"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title fs-4">Arroz con Pato</h3><span class="dish-price fs-4">S/ 82</span></div>
+                            <p class="dish-desc">Pato cocinado por 5 horas en aderezo de chicha de jora y loche, servido con arroz meloso. [cite: 37, 38, 127, 128, 214, 215]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dish-card highlight">
+                        <div class="dish-img-container" style="height: 300px;"><img src="../assets/img/noimage.avif" alt="Chancho al Palo"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-2"><h3 class="dish-title fs-4">Chancho al Palo</h3><span class="dish-price fs-4">S/ 72</span></div>
+                            <p class="dish-desc">Panceta en brasas de leña, arroz del huerto salteado, chutney de ajíes y ensalada. [cite: 39, 40, 129, 130, 216, 217]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Asado de Tira"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title">Asado de Tira con Puré</h3><span class="dish-price">S/ 72</span></div>
+                            <p class="dish-desc">280gr de asado (5 horas en vino tinto), puré de papas y arúgula. [cite: 41, 42, 131, 132, 218, 219]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Arroz Norteño"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title">Arroz Norteño</h3><span class="dish-price">S/ 80</span></div>
+                            <p class="dish-desc">Arroz meloso con zapallo loche, generosa mixtura de mariscos y ceviche de carretilla. [cite: 43, 44, 45, 133, 134]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Lomo Saltado"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title">Lomo Saltado</h3><span class="dish-price">S/ 64</span></div>
+                            <p class="dish-desc">180gr de lomo fino flameado al wok, papas amarillas fritas y arroz con choclo. [cite: 46, 47, 135, 136, 137, 220, 221, 222]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Ceviche Clásico"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title">Ceviche Clásico</h3><span class="dish-price">S/ 63</span></div>
+                            <p class="dish-desc">Dados de pescado en leche de tigre, camote glaseado y choclo desgranado. [cite: 48, 49, 138, 139]</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-6 col-lg-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Fetuccini Huancaína"></div>
+                        <div class="dish-content">
+                            <div class="d-flex justify-content-between mb-1"><h3 class="dish-title">Fetuccini a la Huancaína</h3><span class="dish-price">S/ 72</span></div>
+                            <p class="dish-desc">Con Lomo Saltado o Asado de Tira. Pasta bañada en salsa cremosa de huancaína. [cite: 52, 53, 142, 143, 144]</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="contundentes" class="mb-5">
+             <h2 class="menu-category-title text-center mb-5 text-danger">Los Contundentes</h2>
+             <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Carapulcra"></div>
+                        <div class="dish-content text-center">
+                            <h3 class="dish-title">Carapulcra con Sopa Seca</h3>
+                            <span class="dish-price d-block mb-2 text-warning fs-5 fw-bold">S/ 65</span>
+                            <p class="dish-desc">Papa deshidratada con chanchito al palo, sopa seca y yuquitas fritas. [cite: 61, 149, 150, 244]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Cuy Crocante"></div>
+                        <div class="dish-content text-center">
+                            <h3 class="dish-title">Cuy Crocante</h3>
+                            <span class="dish-price d-block mb-2 text-warning fs-5 fw-bold">S/ 120</span>
+                            <p class="dish-desc">Cuy entero crocante, trigotto de ají amarillo, queso, habas y hierbas andinas. [cite: 62, 63, 151, 152, 245, 246]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dish-card">
+                        <div class="dish-img-container"><img src="../assets/img/noimage.avif" alt="Tacu Tacu"></div>
+                        <div class="dish-content text-center">
+                            <h3 class="dish-title">Tacu Tacu a lo Macho</h3>
+                            <span class="dish-price d-block mb-2 text-warning fs-5 fw-bold">S/ 74</span>
+                            <p class="dish-desc">Bañado en salsa picante de mariscos a base de vino blanco y fondo de pescado. [cite: 64, 153, 154]</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="parrilla" class="mb-5 bg-dark text-white rounded-5 p-5">
+            <div class="text-center mb-5">
+                <span class="text-warning text-uppercase ls-1">Cortes Premium</span>
+                <h2 class="menu-category-title text-white">Parrilla Americana Angus Choice</h2>
+                <p class="text-white-50">Todos los cortes se sirven con papas fritas, ensalada fresca, champiñones y espárragos salteados. [cite: 71, 72, 158, 159, 254]</p>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5">
+                    <div class="border border-secondary rounded-4 p-4 text-center hover-bg-dark-light">
+                        <h3 class="fw-bold mb-2">Lomo Fino (350 gr.)</h3>
+                        <span class="display-6 text-warning fw-bold">S/ 82</span>
+                    </div>
+                    </div>
+                <div class="col-md-5">
+                    <div class="border border-secondary rounded-4 p-4 text-center hover-bg-dark-light">
+                        <h3 class="fw-bold mb-2">Picaña (350 gr.)</h3>
+                        <span class="display-6 text-warning fw-bold">S/ 94</span>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <div class="row g-5">
+            
+            <div class="col-lg-4">
+                <h3 class="fw-bold text-brown mb-4 border-bottom pb-2">Para los Niños</h3>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div>
+                        <strong class="d-block">Mac and Cheese</strong>
+                        <small class="text-muted">Pasta en salsa de queso cheddar.</small>
+                    </div>
+                    <span class="fw-bold text-dark">S/ 37</span>
+                </div>
+                <div class="mb-3 d-flex justify-content-between">
+                    <div>
+                        <strong class="d-block">Pollidog Saludable</strong>
+                        <small class="text-muted">Hot dog de pollo artesanal con papas.</small>
+                    </div>
+                    <span class="fw-bold text-dark">S/ 37</span>
+                </div>
+                </div>
+
+            <div class="col-lg-4">
+                <h3 class="fw-bold text-brown mb-4 border-bottom pb-2">Guarniciones</h3>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between mb-2"><span>Verduras al Wok</span> <strong>S/ 19</strong></li> <li class="d-flex justify-content-between mb-2"><span>Puré de Papa Amarilla</span> <strong>S/ 16</strong></li> <li class="d-flex justify-content-between mb-2"><span>Papas Fritas</span> <strong>S/ 12</strong></li> <li class="d-flex justify-content-between mb-2"><span>Arroz con Choclo</span> <strong>S/ 10</strong></li> </ul>
+            </div>
+
+            <div class="col-lg-4" id="postres">
+                <h3 class="fw-bold text-brown mb-4 border-bottom pb-2">Postres</h3>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between mb-2"><span>Picarones</span> <strong>S/ 21</strong></li> <li class="d-flex justify-content-between mb-2"><span>Tiramisú</span> <strong>S/ 19</strong></li> <li class="d-flex justify-content-between mb-2"><span>Cheesecake (Fruta estación)</span> <strong>S/ 21</strong></li> <li class="d-flex justify-content-between mb-2"><span>Helado Artesanal</span> <strong>S/ 21</strong></li> </ul>
+            </div>
+
+        </div>
+
+        <div class="mt-5 p-4 bg-light rounded-4 border border-success d-flex align-items-center justify-content-center gap-3">
+            <i class="bi bi-balloon-heart-fill text-success fs-3"></i>
+            <div>
+                <h5 class="fw-bold mb-0 text-success">Opción Pet Friendly: S/ 39</h5>
+                <small class="text-muted">Pechuga de pollo o pavo, cereales, tubérculos y vegetales. [cite: 97, 98, 176, 177, 276, 277]</small>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="site-footer bg-dark pt-5 pb-3">
+        <div class="container container-wide">
+            <div class="row g-4 justify-content-between">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0 text-center text-md-start">
+                    <a href="../index.html" class="d-block mb-4 footer-logo mx-auto mx-md-0">
+                        <img src="../assets/img/jora_blanco.png" alt="Jora Restaurant Logo" width="180">
+                    </a>
+                    <p class="text-white-50 mb-4">
+                        Jora Restaurante Campestre es un espacio donde la gastronomía peruana se fusiona con la naturaleza.
+                    </p>
+                    <h5 class="text-white mb-3 footer-title-sm">Síguenos</h5>
+                    <div class="footer-social-links d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="https://www.tiktok.com/@jorarestaurante" target="_blank" class="footer-social-btn tiktok"><img src="../assets/icons/tiktok_icon.png" alt="TK"></a>
+                        <a href="https://web.facebook.com/p/Jora-Restaurante-100068304454260" target="_blank" class="footer-social-btn facebook"><img src="../assets/icons/facebook_icon.png" alt="FB"></a>
+                        <a href="https://www.instagram.com/jorarestaurante/?hl=es" target="_blank" class="footer-social-btn instagram"><img src="../assets/icons/instagram_icon.png" alt="IG"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0 text-center text-md-start">
+                    <h4 class="footer-title mb-4">Explora</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="platos.html">Carta de Comida</a></li>
+                        <li><a href="bebidas.html">Bebidas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="shows.html">Shows</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="tour_virtual.html">Tour Virtual</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center text-md-start">
+                    <h4 class="footer-title mb-4">Contáctanos</h4>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><a href="https://wa.me/51967715165" target="_blank" class="d-flex align-items-start gap-3 justify-content-center justify-content-md-start"><div class="contact-icon"><img src="../assets/icons/whatsapp_icon.png" alt="Tel"></div><div class="text-start"><span class="d-block text-white fw-bold">WhatsApp General</span><span class="text-white-50">967 715 165</span></div></a></li>
+                        <li><a href="mailto:jorarestaurante1@gmail.com" class="d-flex align-items-start gap-3 justify-content-center justify-content-md-start"><div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div><div class="text-start"><span class="d-block text-white fw-bold">Correo</span><span class="text-white-50 text-truncate" style="max-width: 150px;">jorarestaurante1@gmail.com</span></div></a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Jora+Restaurante+Pachacamac" target="_blank" class="d-flex align-items-start gap-3 justify-content-center justify-content-md-start"><div class="contact-icon"><img src="../assets/icons/ubicacion_blanco.png" alt="Ubi"></div><div class="text-start"><span class="d-block text-white fw-bold">Ubicación</span><span class="text-white-50">Pachacámac, Lima</span></div></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center text-md-start">
+                    <h4 class="footer-title mb-4">Legal</h4>
+                    <ul class="list-unstyled footer-links mb-4">
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                    <div class="libro-reclamaciones-block"><a href="reclamaciones.html" class="d-block mx-auto mx-md-0" style="max-width: 150px;"><img src="../assets/img/librodereclamaciones.webp" alt="Libro" class="img-fluid rounded-3 border border-secondary"></a></div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4 opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start"><p class="text-white-50 small mb-0">© <span id="year">2026</span> <strong>Jora Restaurant</strong>.</p></div>
+                <div class="col-md-6 text-center text-md-end d-none d-md-block"><p class="text-white-50 small mb-0">Diseñado con <span class="text-danger">❤</span></p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    
+    <script>
+        function ajustarSubMenu() {
+            const header = document.getElementById('mainNav');
+            const subMenu = document.getElementById('subMenuCarta');
+            
+            if (header && subMenu) {
+                subMenu.style.top = header.offsetHeight + 'px';
+            }
+        }
+
+        window.addEventListener('scroll', ajustarSubMenu);
+        window.addEventListener('resize', ajustarSubMenu);
+        document.addEventListener('DOMContentLoaded', ajustarSubMenu);
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
